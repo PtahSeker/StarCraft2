@@ -1,30 +1,44 @@
-\documentclass{article}
+\documentclass{report}
+
+\newcommand{\action}[4]{#1 & #2 & #3 & #4 \\ \hline}
+
+\newenvironment{opening}
+{
+    \begin{tabular}{|r|l|l|l|}
+    \hline
+    \textbf{Time} & \textbf{Workers} & \textbf{Action} & \textbf{Units} \\
+    \hline
+}
+{
+    \end{tabular}
+}
 
 \begin{document}
-\section{Matchups}
-\subsection{PT vs PP}
-\subsubsection{DT rush}
+\tableofcontents\newpage
+\chapter{Matchups}
+\section{PT vs PP}
+\subsection{DT rush}
 Reaper used to chase a way scouting workstation and Dark
 templar arrive at 7min in base.
 
 Scout it by spotting early 2 gas with 3 workers.
 
 
-\section{Openings}
-\subsection{Protoss}
-\subsubsection{Dark Templar Rush}
+\chapter{Openings}
+\section{Protoss}
+\subsection{Dark Templar rush}
 
-Time	Probes	Action				Units
----------------------------------------------------------
- 1:45	13	Gateway
- 2:13	15	2 Assimilators
- 2:43	18	4 Probes on gas
- 2:53	18/18	Cyber core
- 3:12	20	2 More probes on gas
- 3:44	22	Council and WG research
- 4:35	26/26	Dark Shrine
- 4:40	26/34	Stalker and probe leave base	1 Stalker
- 5:13	28	2 Gateways
- 6:40	36	DT Warpin			3 DT 1 Stalker
+\begin{opening}
+\action{1:45}{13}   {Gateway}                     {}
+\action{2:13}{15}   {2 Assimilators}              {}
+\action{2:43}{18}   {4 Probes on gas}             {}
+\action{2:35}{18/18}{Cyber core}                  {}
+\action{3:12}{20}   {2 more Probes on gas}        {}
+\action{3:44}{22}   {Council and WG research}     {}
+\action{4:35}{26/26}{Dark Shrine}                 {}
+\action{4:40}{26/34}{Stalker and probe leave base}{1 Stalker}
+\action{5:13}{28}   {2 Gateways}                  {}
+\action{6:40}{36}   {DT Warpin}                   {3 DT 1 Stalker}
+\end{opening}
 
 \end{document}
